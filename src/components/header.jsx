@@ -8,7 +8,7 @@ export default function Header() {
             <header className="fade-2">
                 <div className="logo">
                     <a href="/">Site Logo</a>
-                    </div>
+                </div>
             </header>
             {/* <nav className="nav fade-2">
                 <a href="Project1">Project-1</a><br />
