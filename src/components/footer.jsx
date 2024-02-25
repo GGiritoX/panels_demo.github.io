@@ -5,9 +5,11 @@
 
 export default function Footer() {
     return (
-        <footer>
-            <hr />
-            <p>info down text</p>
-        </footer>
+        <>
+            <footer className="fade-2">
+                <hr />
+                <p>info down text</p>
+            </footer>
+        </>
     )
 }

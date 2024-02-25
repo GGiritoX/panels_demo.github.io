@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import "./styles.css";
-import "./panels.css";
-import "./fadeanim.css";
-import "./bwstyle.css";
+import "./css/styles.css";
+import "./css/panels.css";
+import "./css/fadeanim.css";
+import "./css/bwstyle.css";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

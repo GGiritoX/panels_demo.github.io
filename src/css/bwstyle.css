@@ -1,6 +1,6 @@
 .bw-image {
     filter: grayscale(100%);
-    transition: filter 1s ease;
+    transition: filter 2s ease;
 }
 
 .bw-image:hover {

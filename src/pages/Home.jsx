@@ -6,7 +6,7 @@ export default function Home() {
         <>
             <Header />
             <main>
-                <h1 className="fade-1">Company Name</h1>
+                <h1 className="fade-1 title">Projects</h1>
                 <div className="content fade-3">
                     <div className="panels">
                         <div className="panel">
