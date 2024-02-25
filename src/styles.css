@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.nav {
+    background-color: #333;
+    color:white;
+    display: list-item;
+    padding: 1rem;
+}
+
+header a, .nav a{
+    color: black;
+    outline: none;
+    text-decoration: none;
+}
+.nav a {
+    color: white;
+}
+.logo {
+    font-size: xx-large;
+}
+
+main h1 {
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
