@@ -5,6 +5,7 @@ import "./css/styles.css";
 import "./css/panels.css";
 import "./css/fadeanim.css";
 import "./css/bwstyle.css";
+import "./css/header.css";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

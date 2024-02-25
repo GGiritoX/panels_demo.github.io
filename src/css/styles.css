@@ -3,34 +3,9 @@ body{
     font-family: Arial, sans-serif;
     background-color: #d0cfcd;
 }
-header {
-    height: 7rem;
-}
-.nav {
-    background-color: #333;
-    color:white;
-    display: list-item;
-    padding: 1rem;
-}
-
-header a, .nav a{
-    color: white;
-    outline: none;
-    text-decoration: none;
-}
-.logo {
-    font-size: 3rem;
-    padding: 3rem;
-}
-.logo a {
-    color: #787878;
-}
 
 .title {
-    font-size: 3rem;
-}
-
-main h1 {
+    font-size: 3.5rem;
     text-align: center;
 }
 

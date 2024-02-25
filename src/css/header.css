@@ -1,0 +1,44 @@
+header {
+    height: 8rem;
+    margin-bottom: 3rem;
+    padding: 6rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+}
+
+header a {
+    color: #787878;
+}
+
+.logoButton {
+    font-size: 4rem;
+}
+
+.sideMenuButton svg {
+    width: 38px;
+    height: 38px;
+    color: #787878;
+}
+
+.offcanvas {
+    font-size: 1.2rem;
+    --bs-offcanvas-transition: transform 1s ease-in-out;
+    --bs-offcanvas-color: black;
+    --bs-offcanvas-bg: rgba(255, 255, 255, 0.6);
+
+    /* --bs-offcanvas-zindex: 1045; */
+    /* --bs-offcanvas-width: 400px; */
+    /* --bs-offcanvas-height: 30vh; */
+    /* --bs-offcanvas-padding-x: 1rem; */
+    /* --bs-offcanvas-padding-y: 1rem; */
+    /* --bs-offcanvas-color: var(--bs-body-color); */
+    /* --bs-offcanvas-bg: var(--bs-body-bg); */
+    /* --bs-offcanvas-border-width: var(--bs-border-width); */
+    /* --bs-offcanvas-border-color: var(--bs-border-color-translucent); */
+    /* --bs-offcanvas-box-shadow: var(--bs-box-shadow-sm); */
+    /* --bs-offcanvas-transition: transform 0.3s ease-in-out; */
+    /* --bs-offcanvas-title-line-height: 1.5; */
+}

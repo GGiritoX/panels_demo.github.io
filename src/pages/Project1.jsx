@@ -6,7 +6,7 @@ export default function Project1() {
         <>
             <Header />
                 <main>
-                    text
+                    
                 </main>
             <Footer/>
         </>
