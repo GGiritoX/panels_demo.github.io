@@ -10,43 +10,35 @@ export default function Home() {
                 <div className="content fade-3">
                     <div className="panels">
                         <div className="panel">
-                            <img className="bw-image" src={require("../img/img1.jpg")} alt="" />
+                            <img className="bw-image" src={require("../img/01-title.jpg")} alt="" />
                             <div className="text">Project</div>
                         </div>
                         <div className="panel">
-                            <img className="bw-image" src={require("../img/img2.jpg")} alt="" />
+                            <img className="bw-image" src={require("../img/02-title.jpg")} alt="" />
                             <div className="text">Project</div>
                         </div>
                         <div className="panel">
-                            <img className="bw-image" src={require("../img/img3.jpg")} alt="" />
+                            <img className="bw-image" src={require("../img/03-title.jpg")} alt="" />
                             <div className="text">Project</div>
                         </div>
                         <div className="panel">
-                            <img className="bw-image" src={require("../img/img4.jpg")} alt="" />
+                            <img className="bw-image" src={require("../img/04-title.jpg")} alt="" />
                             <div className="text">Project</div>
                         </div>
                         <div className="panel">
-                            <img className="bw-image" src={require("../img/img4.jpg")} alt="" />
+                            <img className="bw-image" src={require("../img/05-title.jpg")} alt="" />
                             <div className="text">Project</div>
                         </div>
                         <div className="panel">
-                            <img className="bw-image" src={require("../img/img3.jpg")} alt="" />
+                            <img className="bw-image" src={require("../img/06-title.jpg")} alt="" />
                             <div className="text">Project</div>
                         </div>
                         <div className="panel">
-                            <img className="bw-image" src={require("../img/img2.jpg")} alt="" />
+                            <img className="bw-image" src={require("../img/07-title.jpg")} alt="" />
                             <div className="text">Project</div>
                         </div>
                         <div className="panel">
-                            <img className="bw-image" src={require("../img/img1.jpg")} alt="" />
-                            <div className="text">Project</div>
-                        </div>
-                        <div className="panel">
-                            <img className="bw-image" src={require("../img/img1.jpg")} alt="" />
-                            <div className="text">Project</div>
-                        </div>
-                        <div className="panel">
-                            <img className="bw-image" src={require("../img/img2.jpg")} alt="" />
+                            <img className="bw-image" src={require("../img/08-title.jpg")} alt="" />
                             <div className="text">Project</div>
                         </div>
                     </div>
