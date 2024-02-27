@@ -3,9 +3,6 @@ header {
     margin-bottom: 3rem;
     padding: 6rem;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     white-space: nowrap;
 }
 
@@ -13,9 +10,19 @@ header a {
     color: #787878;
 }
 
+@media (min-width: 600px) {
+
+}
+
+@media (min-width: 900px) {
+
+}
+
 .logoButton {
     font-size: 4rem;
 }
+
+.sideMenuButton {}
 
 .sideMenuButton svg {
     width: 38px;
@@ -28,7 +35,6 @@ header a {
     --bs-offcanvas-transition: transform 1s ease-in-out;
     --bs-offcanvas-color: black;
     --bs-offcanvas-bg: rgba(255, 255, 255, 0.6);
-
     /* --bs-offcanvas-zindex: 1045; */
     /* --bs-offcanvas-width: 400px; */
     /* --bs-offcanvas-height: 30vh; */
