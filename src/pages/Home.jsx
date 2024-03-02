@@ -1,5 +1,6 @@
 import Header from "../components/header"
 import Footer from "../components/footer"
+import IMAGES from '../img/tiles/index'
 
 export default function Home() {
     return (
@@ -11,36 +12,36 @@ export default function Home() {
                     <div className="panels">
                         <div className="panel">
                             <a href="Project1">
-                                <img className="bw-image" href="Project1" src={require("../img/tiles/01-title.jpg")} alt="" />
+                                <img className="bw-image" href="Project1" src={IMAGES.img1} alt="" />
                                 <div className="text">Project</div>
                             </a>
                         </div>
                         <div className="panel">
-                            <img className="bw-image" src={require("../img/tiles/02-title.jpg")} alt="" />
+                            <img className="bw-image" src={IMAGES.img2} alt="" />
                             <div className="text">Project</div>
                         </div>
                         <div className="panel">
-                            <img className="bw-image" src={require("../img/tiles/03-title.jpg")} alt="" />
+                            <img className="bw-image" src={IMAGES.img3} alt="" />
                             <div className="text">Project</div>
                         </div>
                         <div className="panel">
-                            <img className="bw-image" src={require("../img/tiles/04-title.jpg")} alt="" />
+                            <img className="bw-image" src={IMAGES.img4} alt="" />
                             <div className="text">Project</div>
                         </div>
                         <div className="panel">
-                            <img className="bw-image" src={require("../img/tiles/05-title.jpg")} alt="" />
+                            <img className="bw-image" src={IMAGES.img5} alt="" />
                             <div className="text">Project</div>
                         </div>
                         <div className="panel">
-                            <img className="bw-image" src={require("../img/tiles/06-title.jpg")} alt="" />
+                            <img className="bw-image" src={IMAGES.img6} alt="" />
                             <div className="text">Project</div>
                         </div>
                         <div className="panel">
-                            <img className="bw-image" src={require("../img/tiles/07-title.jpg")} alt="" />
+                            <img className="bw-image" src={IMAGES.img7} alt="" />
                             <div className="text">Project</div>
                         </div>
                         <div className="panel">
-                            <img className="bw-image" src={require("../img/tiles/08-title.jpg")} alt="" />
+                            <img className="bw-image" src={IMAGES.img8} alt="" />
                             <div className="text">Project</div>
                         </div>
                     </div>

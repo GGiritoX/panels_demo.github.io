@@ -1,6 +1,12 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,250;1,250&display=swap');
+
+body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
     background-color: #d0cfcd;
 }
 
@@ -9,6 +15,6 @@ body{
     text-align: center;
 }
 
-footer{
+footer {
     text-align: center;
 }

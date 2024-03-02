@@ -1,0 +1,65 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-bottom: 50px;
+}
+
+.description {
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
+
+.description-full,
+.description-text {
+    transition: opacity 0.5s ease-in-out;
+
+    /* ============== */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: auto;
+}
+
+.description-text {
+    font-size: 2rem;
+}
+
+.show {
+    opacity: 1;
+    z-index: 1;
+}
+
+.hide {
+    opacity: 0;
+    z-index: -1;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-indicators button {
+    background-color: transparent !important;
+    width: 60px !important;
+    padding: .5px !important;
+    border: 1.5px solid white !important;
+    border-radius: 15px !important;
+    opacity: .8 !important;
+}
+
+.carousel-indicators .active {
+    opacity: 1 !important;
+    border: 1.5px solid black !important;
+}
+
+.projectName {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 auto;
+}
