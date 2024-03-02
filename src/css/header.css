@@ -35,6 +35,7 @@ header a {
     --bs-offcanvas-transition: transform 1s ease-in-out;
     --bs-offcanvas-color: black;
     --bs-offcanvas-bg: rgba(255, 255, 255, 0.6);
+    
     /* --bs-offcanvas-zindex: 1045; */
     /* --bs-offcanvas-width: 400px; */
     /* --bs-offcanvas-height: 30vh; */
@@ -47,4 +48,8 @@ header a {
     /* --bs-offcanvas-box-shadow: var(--bs-box-shadow-sm); */
     /* --bs-offcanvas-transition: transform 0.3s ease-in-out; */
     /* --bs-offcanvas-title-line-height: 1.5; */
+}
+
+.offcanvas-backdrop.show {
+    opacity: 0 !important;
 }

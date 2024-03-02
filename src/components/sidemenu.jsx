@@ -17,7 +17,7 @@ export default function SideMenu() {
         </svg>
       </button>
 
-      <Offcanvas show={show} onHide={handleClose} backdrop={false} scroll={true} placement='end'>
+      <Offcanvas show={show} onHide={handleClose} backdrop={true} scroll={true} placement='end'>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Menu</Offcanvas.Title>
         </Offcanvas.Header>
