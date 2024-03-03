@@ -14,7 +14,7 @@
     */
 
     filter: grayscale(100%) contrast(65%) brightness(130%);
-    transition: filter 1s ease;
+    transition: filter 1.5s ease;
 }
 
 .bw-image:hover {

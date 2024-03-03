@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,250;1,250&display=swap');
 
+::selection {
+    color: white;
+    background: rgb(160, 160, 160);
+  }
+
 body {
     margin: 0;
     color: black;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 350;
+    font-weight: 500;
     font-style: normal;
     background-color: #d0cfcd;
 }

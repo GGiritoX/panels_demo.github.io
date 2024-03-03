@@ -35,7 +35,7 @@ header a {
     --bs-offcanvas-transition: transform 1s ease-in-out;
     --bs-offcanvas-color: black;
     --bs-offcanvas-bg: rgba(255, 255, 255, 0.6);
-    
+    --bs-border-width: 0px !important;
     /* --bs-offcanvas-zindex: 1045; */
     /* --bs-offcanvas-width: 400px; */
     /* --bs-offcanvas-height: 30vh; */
@@ -52,4 +52,10 @@ header a {
 
 .offcanvas-backdrop.show {
     opacity: 0 !important;
+}
+
+.offcanvas-body a{
+    display: table !important;
+    text-decoration: none !important;
+    color: #000;
 }

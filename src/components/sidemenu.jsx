@@ -22,15 +22,10 @@ export default function SideMenu() {
           <Offcanvas.Title>Menu</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          - item<br/>
-          - item<br/>
-          - item<br/>
-          - item<br/>
-          <br/>
-          text text text text text<br/>
-          text text text text text<br/>
-          text text text text text<br/>
-          text text text text text<br/>
+          <a className="text-decoration-none" href="/">Projects</a>
+          <a className="text-decoration-none" href="/contacts">Contacts</a>
+          <a className="text-decoration-none" href="/">Link</a>
+          <a className="text-decoration-none" href="/">Link</a>
         </Offcanvas.Body>
       </Offcanvas>
     </>

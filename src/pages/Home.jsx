@@ -13,7 +13,7 @@ export default function Home() {
                         <div className="panel">
                             <a href="Project1">
                                 <img className="bw-image" href="Project1" src={IMAGES.img1} alt="" />
-                                <div className="text">Project</div>
+                                <div className="text">OLN-36B</div>
                             </a>
                         </div>
                         <div className="panel">

@@ -12,33 +12,50 @@
 
 .description-full,
 .description-text {
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 1s ease-in-out;
 
     /* ============== */
     position: absolute;
     width: 100%;
     height: 100%;
-    padding: 10px;
+    padding: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     overflow: auto;
 }
 
 .description-text {
-    font-size: 2rem;
+    text-align: center !important;
 }
 
-.show {
+.description .show {
+    transition: opacity 1s ease-in-out;
     opacity: 1;
     z-index: 1;
 }
 
-.hide {
+.description .hide {
+    transition: opacity 1s ease-in-out;
     opacity: 0;
     z-index: -1;
 }
+
+.carousel-item {
+    transition-duration: 3s !important;
+    /* ============================ */
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    position: relative;
+}
+
 
 .carousel-indicators {
     bottom: -50px;
@@ -46,20 +63,24 @@
 
 .carousel-indicators button {
     background-color: transparent !important;
-    width: 60px !important;
+    width: 65px !important;
     padding: .5px !important;
+    margin: 0 8px !important;
     border: 1.5px solid white !important;
-    border-radius: 15px !important;
-    opacity: .8 !important;
+    border-radius: 8px !important;
+    opacity: .6 !important;
+    transition: border-color 2s ease-in-out !important;
 }
 
 .carousel-indicators .active {
     opacity: 1 !important;
-    border: 1.5px solid black !important;
+    border-color: black !important;
 }
 
 .projectName {
+    color: black !important;
     font-size: 1.5rem;
     text-align: center;
     margin: 0 auto;
 }
+
