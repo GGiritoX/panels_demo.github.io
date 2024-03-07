@@ -7,8 +7,8 @@ export default function Home() {
         <>
             <Header />
             <main>
-                <h1 className="fade-1 title">Projects</h1>
-                <div className="content fade-3">
+                {/* <h1 className="fade-1 title">Projects</h1> */}
+                <div className="content fade-2">
                     <div className="panels">
                         <div className="panel">
                             <a href="Project1">

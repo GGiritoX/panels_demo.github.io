@@ -19,13 +19,12 @@ export default function SideMenu() {
 
       <Offcanvas show={show} onHide={handleClose} backdrop={true} scroll={true} placement='end'>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Menu</Offcanvas.Title>
+          {/* <Offcanvas.Title>Menu</Offcanvas.Title> */}
         </Offcanvas.Header>
         <Offcanvas.Body>
           <a className="text-decoration-none" href="/">Projects</a>
+          <a className="text-decoration-none" href="/contacts">Salary</a>
           <a className="text-decoration-none" href="/contacts">Contacts</a>
-          <a className="text-decoration-none" href="/">Link</a>
-          <a className="text-decoration-none" href="/">Link</a>
         </Offcanvas.Body>
       </Offcanvas>
     </>

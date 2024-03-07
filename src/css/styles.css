@@ -3,14 +3,14 @@
 ::selection {
     color: white;
     background: rgb(160, 160, 160);
-  }
+}
 
 body {
     margin: 0;
     color: black;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 600;
     font-style: normal;
     background-color: #d0cfcd;
 }

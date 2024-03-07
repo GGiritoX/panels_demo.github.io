@@ -8,6 +8,6 @@ const IMAGES = {
     img7: require('./01-07.jpg'),
     img8: require('./01-08.jpg'),
     img9: require('./01-09.jpg'),
-    imп10: require('./01-10.jpg')
+    img10: require('./01-10.jpg')
 }
 export default IMAGES;

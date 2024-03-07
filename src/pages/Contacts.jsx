@@ -6,7 +6,7 @@ export default function Contacts() {
         <>
             <Header />
             <main>
-                <h1 className="fade-1 title">Contacts</h1>
+                <h1 className="fade-2 title">Contacts</h1>
                 <div className="content fade-3">
                     contact info...
                 </div>

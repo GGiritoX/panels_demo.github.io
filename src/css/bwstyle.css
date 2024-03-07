@@ -12,7 +12,7 @@
     filter: saturate(30%);
     filter: sepia(60%);
     */
-
+    
     filter: grayscale(100%) contrast(65%) brightness(130%);
     transition: filter 1.5s ease;
 }
