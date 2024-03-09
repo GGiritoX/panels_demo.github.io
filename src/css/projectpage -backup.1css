@@ -4,7 +4,6 @@
     margin-bottom: 50px;
 }
 
-/* ============= DESCRIPTION =============== */
 .description {
     cursor: pointer;
     text-align: center;
@@ -34,7 +33,6 @@
     font-size: 1.3em;
     font-weight: 400;
 }
-
 .description-full {
     font-weight: 600;
 }
@@ -50,34 +48,33 @@
     opacity: 0;
     z-index: -1;
 }
+/* ====================================== */
 
-/* ========================================== */
-
-/* =================== IMAGES ======================= */
-
-.carousel-item {
-    text-align: center;
-    vertical-align: middle;
-    transition-duration: 3s !important;
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: center;
-    align-items: center;
+.carousel-inner {
+    height: 520px;
+    /* border: 3px solid red */
 }
 
 .carousel-item img {
+    display: block !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    height: 100% !important;
+  }
+
+/* .carousel-item {
+    transition-duration: 3s !important;
+    
+    width: 100%;
     height: 550px;
-    margin: 0 20px;
-    /* border: 3px solid cyan; */
-}
+    overflow: hidden;
+    position: relative;
+} */
 
-.carousel-item img:first-child {
-    margin-left: 0;
-}
-
-.carousel-item img:last-child {
-    margin-right: 0;
-}
+/* .carousel-item img {
+    object-fit: cover;
+    position: relative;
+} */
 
 .carousel-indicators {
     bottom: -50px;
@@ -90,25 +87,21 @@
     margin: 0 8px !important;
     border: 1.5px solid white !important;
     border-radius: 8px !important;
-    opacity: 1 !important;
-    transition: border-color 3s ease-in-out !important;
+    opacity: .6 !important;
+    transition: border-color 2s ease-in-out !important;
 }
 
 .carousel-indicators .active {
     opacity: 1 !important;
     border-color: black !important;
 }
-
-.carousel-control-next,
-.carousel-control-prev {
+.carousel-control-next, .carousel-control-prev {
     width: 3%;
     margin: 15px;
     align-items: end;
+    color: blue;
 }
-
-/* ========================================================== */
-
-
+/* ====================================== */
 .projectName {
     color: black !important;
     font-size: 2em;
@@ -116,3 +109,26 @@
     text-align: center;
     margin: 0 auto;
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+  ::-webkit-scrollbar-button {
+    display: none;
+  }
+  
