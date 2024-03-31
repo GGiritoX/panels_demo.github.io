@@ -1,6 +1,5 @@
 import Header from "../components/header-project"
 import Footer from "../components/footer"
-import { alignPropType } from "react-bootstrap/esm/types"
 
 
 export default function Services() {
