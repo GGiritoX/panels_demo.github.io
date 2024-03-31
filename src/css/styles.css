@@ -20,11 +20,6 @@ body {
     text-align: center;
 }
 
-footer {
-    text-align: center;
-}
-
-
 ::-webkit-scrollbar {
     width: 8px;
   }

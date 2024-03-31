@@ -23,7 +23,7 @@ export default function SideMenu() {
         </Offcanvas.Header>
         <Offcanvas.Body>
           <a className="text-decoration-none" href="/">Projects</a>
-          <a className="text-decoration-none" href="/contacts">Services</a>
+          <a className="text-decoration-none" href="/services">Services</a>
           <a className="text-decoration-none" href="/contacts">Contacts</a>
         </Offcanvas.Body>
       </Offcanvas>
