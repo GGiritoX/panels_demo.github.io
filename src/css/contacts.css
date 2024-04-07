@@ -1,0 +1,80 @@
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textlinks, .feedback {
+    padding: 15px;
+    margin: 0px 70px;
+    columns: 1;
+    display: inline-block;
+}
+
+.text {
+    font-size: 60pt;
+    font-weight: black;
+    line-height: 60px;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    /* display: table-caption; */
+}
+
+.line {
+    background-color: black;
+    height: 2px;
+    width: 80px;
+    margin: 15px 0px;
+}
+
+.links {
+    margin: 15px 0px;
+}
+
+.feedback form {
+    display: grid;
+    width: 350px;
+}
+
+.textlinks .vertical {
+    display: grid;
+}
+
+.textlinks .vertical a{
+    margin: 0px 5px;
+}
+
+.feedback input[type=text],
+input[type=Email] {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    margin: 5px 0px;
+}
+
+#umessage {
+    margin-top: 25px;
+    border: 1px solid black;
+    background: transparent;
+    resize: vertical;
+}
+
+.feedback input[type=button] {
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    width: 50px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: black !important;
+    opacity: 1;
+    font-weight: bold;
+}

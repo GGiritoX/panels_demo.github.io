@@ -17,9 +17,10 @@ footer * {
 }
 
 .footer-links {
-    display: grid;
+    display: inline;
     gap: 0 5px;
     align-content: center;
+    margin: 0px 55px;
 }
 
 .footer-links.vertical {
@@ -40,6 +41,7 @@ footer * {
     text-decoration: none !important;
     color: black;
     margin-top: 5px;
+    margin: 5px 10px;
 }
 
 /* .footer-links:nth-child(3) {
