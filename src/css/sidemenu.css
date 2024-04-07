@@ -23,8 +23,7 @@
 }
 
 .offcanvas-header .btn-close {
-    margin: calc(1.5 * var(--bs-offcanvas-padding-y)) calc(1.8 * var(--bs-offcanvas-padding-x)) calc(-.5 * var(--bs-offcanvas-padding-y)) auto;
-    
+    margin: calc(3.4 * var(--bs-offcanvas-padding-y)) calc(3.5 * var(--bs-offcanvas-padding-x)) calc(-.5 * var(--bs-offcanvas-padding-y)) auto;
 }
 
 .offcanvas-body {
