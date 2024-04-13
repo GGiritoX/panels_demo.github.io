@@ -1,4 +1,4 @@
-.middle {
+.contacts-middle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,7 +6,7 @@
     margin-top: 142px;
 }
 
-.textlinks, .feedback {
+.contacts-textlinks, .feedback {
     padding: 8px;
     margin: 0px 270px;
     columns: 1;
@@ -14,7 +14,7 @@
     line-height: 32px;
 }
 
-.text {
+.contacts-text {
     font-size: 64px;
     font-weight: 600;
     line-height: 48px;
@@ -24,31 +24,31 @@
     /* display: table-caption; */
 }
 
-.line {
+.contacts-line {
     background-color: black;
     height: 1px;
     width: 62px;
     margin: 15px 0px;
 }
 
-.links {
+.contacts-links {
     margin: 15px 0px;
 }
 
-.feedback form {
+.contacts-feedback form {
     display: grid;
     width: 380px;
 }
 
-.textlinks .vertical {
+.contacts-textlinks .vertical {
     display: grid;
 }
 
-.textlinks .vertical a{
+.contacts-textlinks .vertical a{
     margin: 0px 4px;
 }
 
-.feedback input[type="text"],
+.contacts-feedback input[type="text"],
 input[type="Email"] {
     border: none;
     border-bottom: 1px solid black;
@@ -69,7 +69,7 @@ input[type="Email"] {
     
 }
 
-.feedback input[type=button] {
+.contacts-feedback input[type=button] {
     border: none;
     background: transparent;
     font-weight: 400;

@@ -16,7 +16,7 @@ export default function Project2() {
         <>
             <Header />
             <main>
-                <div className="grid fade-2">
+                <div className="project-grid fade-2">
                     <div className="element">
                         <div className="info" style={{ margin: "0px 15px" }}>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo id placeat tenetur recusandae, rerum itaque consectetur. Laudantium hic error recusandae maiores dolorum nostrum dolorem unde optio, iste architecto eius ipsam?

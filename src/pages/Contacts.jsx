@@ -8,15 +8,15 @@ export default function Contacts() {
             <main>
                 <div className="content fade-2">
 
-                    <div className="middle">
-                        <div className="textlinks">
+                    <div className="contacts-middle">
+                        <div className="contacts-textlinks">
                             <div className="vertical">
-                                <div className="text">
+                                <div className="contacts-text">
                                     REACH OUT
                                 </div>
-                                <div className="line"></div>
+                                <div className="contacts-line"></div>
 
-                                <div className="links">
+                                <div className="contacts-links">
                                     <a href="/behance">
                                         <svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M0 0V12H6.25977C6.83978 12 10.8342 11.891 10.8342 8.51351C10.8342 6.40287 9.26654 5.68581 8.47039 5.47297C9.05587 5.21706 10.2214 4.60895 10.2214 2.97973C10.2214 2.07264 10.0818 0 6.08467 0H0ZM14.2705 1.11486V2.20946H19.1076V1.11486H14.2705ZM2.84535 2.0473H5.5156C5.76731 2.0473 7.46357 1.92314 7.46357 3.42568C7.46357 4.7103 6.23788 4.84459 5.73447 4.84459H2.84535V2.0473ZM16.8095 3.2027C13.1515 3.2027 12.3882 6.14443 12.3882 7.41892C12.3882 11.2019 15.737 11.6351 16.8095 11.6351C19.7013 11.6351 20.5221 9.90203 20.8586 8.93919H18.7574C18.6753 9.1875 18.0625 9.99324 16.897 9.99324C14.9436 9.99324 14.7739 8.57939 14.7739 7.94595H20.9899C21.1158 5.75676 20.0816 3.2027 16.8095 3.2027ZM16.7438 4.84459C17.3265 4.84459 17.7971 5.00169 18.0789 5.29054C18.3607 5.58193 18.5686 6.0076 18.6261 6.56757H14.7739C14.7849 6.41301 14.8232 6.23564 14.8834 6.04054C14.9436 5.84037 15.0366 5.65034 15.1898 5.47297C15.343 5.29814 15.5564 5.14611 15.8026 5.02703C16.0543 4.90541 16.3662 4.84459 16.7438 4.84459ZM2.84535 6.64865H5.93146C6.5443 6.64865 7.98887 6.73733 7.98887 8.37162C7.98887 9.95524 6.16948 9.9527 5.88769 9.9527H2.84535V6.64865Z" fill="#242424" />
@@ -34,7 +34,7 @@ export default function Contacts() {
                                 </div>
                             </div>
                         </div>
-                        <div className="feedback">
+                        <div className="contacts-feedback">
                             <div style={{fontSize: "20px", fontWeight: 500}}>We'd love to hear from you</div>
                             <form action="none">
                                 <input type="text" id='uname' name="uname" required placeholder="Name" />

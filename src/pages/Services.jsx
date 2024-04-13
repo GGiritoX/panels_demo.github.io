@@ -9,7 +9,7 @@ export default function Services() {
             <Header />
             <main>
 
-                <div className="stext fade-2" style={{height: "1000px"}}>
+                <div className="services-text fade-2" style={{height: "1000px"}}>
                     <div>Створення концепцій</div>
                     <div>Арт дирекція</div>
                     <div>Проектування простору</div>

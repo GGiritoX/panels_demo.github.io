@@ -1,16 +1,14 @@
-.stext {
+.services-text {
     display: flex;
     justify-content: center;
     /* align-items: center; */
 }
 
-.stext div {
+.services-text div {
     padding: 15px;
     margin: 0 15px;
     border: 2px solid grey;
     border-radius: 25px;
     height: 150px;
     background-color: rgba(255, 255, 255, 0.2);
-    
-    
 }

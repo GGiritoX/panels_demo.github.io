@@ -1,4 +1,4 @@
-.column {
+.project-column {
     float: left;
     width: 50%;
     padding: 5px;
@@ -10,7 +10,7 @@
     display: table;
 }
 
-.slider .column img {
+.project-slider .project-column img {
     margin: 0;
     padding: 0;
     max-height: 500px;
