@@ -1,5 +1,6 @@
 .offcanvas {
-    font-size: 1.2rem;
+    font-size: 20px;
+    font-weight: 400;
     --bs-offcanvas-transition: transform 1s ease-in-out;
     --bs-offcanvas-color: black;
     --bs-offcanvas-bg: rgba(255, 255, 255, 0.75);
@@ -37,4 +38,8 @@
     margin-bottom: 40px;
     color: #000;
     /* font-weight: bold; */
+}
+
+.offcanvas-body a:hover {
+    font-weight: 600;
 }

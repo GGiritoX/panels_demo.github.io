@@ -2,6 +2,8 @@ footer {
     text-align: center;
     margin: 25px;
     margin-top: 75px;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 footer * {
@@ -43,4 +45,8 @@ footer * {
     color: black;
     margin-top: 5px;
     margin: 5px 10px;
+}
+
+.footer-links a:hover {
+    font-weight: 600;
 }

@@ -1,38 +1,47 @@
 .contacts-middle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin-top: 142px;
+    width: 100%;
+    padding: 0 20%;
+    margin-top: 158px;
 }
 
-.contacts-textlinks, .feedback {
-    padding: 8px;
-    margin: 0px 270px;
-    columns: 1;
+.contacts-textlinks,
+.contacts-feedback {
     display: inline-block;
-    line-height: 32px;
+    /* line-height: 32px; */
 }
 
 .contacts-text {
     font-size: 64px;
     font-weight: 600;
-    line-height: 48px;
+    line-height: 47px;
     width: -webkit-min-content;
     width: -moz-min-content;
     width: min-content;
-    /* display: table-caption; */
+}
+
+.contacts-textlinks {
+    float: left;
+    margin-top: 62px;
+}
+
+.contacts-feedback {
+    float: right;
 }
 
 .contacts-line {
     background-color: black;
     height: 1px;
     width: 62px;
-    margin: 15px 0px;
+    margin-top: 20px;
+    margin-bottom: 24px;
 }
 
 .contacts-links {
-    margin: 15px 0px;
+    /* border: 2px dashed orange; */
+}
+
+.contacts-links a {
+    /* border: 1px solid red; */
 }
 
 .contacts-feedback form {
@@ -44,16 +53,16 @@
     display: grid;
 }
 
-.contacts-textlinks .vertical a{
-    margin: 0px 4px;
+.contacts-textlinks .vertical a {
+    margin-right: 12px;
 }
 
 .contacts-feedback input[type="text"],
 input[type="Email"] {
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #242424;
     background-color: transparent;
-    margin: 5px 0px;
+    margin: 7px 0px;
     height: 32px;
     padding: 0;
 
@@ -61,12 +70,12 @@ input[type="Email"] {
 
 #umessage {
     margin-top: 30px;
-    border: 2px solid #7e7e7e;
+    border: 1px solid #242424;
     background: transparent;
     resize: vertical;
     min-height: 68px;
-    
-    
+
+
 }
 
 .contacts-feedback input[type=button] {
@@ -82,13 +91,15 @@ input:focus {
     outline: none;
 }
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
     color: black !important;
     font-weight: 500;
     font-size: 12px;
 }
+
 textarea::-webkit-input-placeholder {
     font-size: 10px;
-    padding: 5px;
-    
+    padding-left: 6px;
+
 }
