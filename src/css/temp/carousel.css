@@ -18,11 +18,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     bottom: -10%;
     left: 50%;
-    transform: translate(-50%, 0%);
+    /* transform: translate(-50%, 0%); */
 }
 
 .my-carousel-item {
@@ -37,7 +37,7 @@
 .my-carousel-btn {
     position: absolute;
 }
-.my-carousel-btn.btn-prev {
+/* .my-carousel-btn.btn-prev {
     bottom: 2%;
     left: 10%;
     transform: translateY(0%);
@@ -47,4 +47,4 @@
     bottom: 2%;
     right: 10%;
     transform: translateY(0%);
-}
+} */

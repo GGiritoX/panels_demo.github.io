@@ -35,7 +35,7 @@ export default function Contacts() {
                             </div>
                         </div>
                         <div className="contacts-feedback">
-                            <div style={{fontSize: "20px", fontWeight: 500}}>We'd love to hear from you</div>
+                            <div className="title-feedback" style={{fontSize: "20px", fontWeight: 500}}>We'd love to hear from you</div>
                             <form action="none">
                                 <input type="text" id='uname' name="uname" required placeholder="Name" />
                                 <input type="email" id='uemail' name='uemail' required placeholder="Email" />

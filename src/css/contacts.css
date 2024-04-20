@@ -1,7 +1,7 @@
 .contacts-middle {
     width: 100%;
     padding: 0 20%;
-    margin-top: 158px;
+    margin-top: 75px;
 }
 
 .contacts-textlinks,
@@ -102,4 +102,51 @@ textarea::-webkit-input-placeholder {
     font-size: 10px;
     padding-left: 6px;
 
+}
+
+@media screen and (max-width: 1500px) {
+    .contacts-middle {
+        margin-top: 0px;
+        /* border: 2px dashed red; */
+        justify-content: center;
+    }
+    .contacts-middle > div {
+        all: inherit;
+        /* border: 2px solid red; */
+        
+    }
+    .contacts-line {
+        display: none;
+    }
+
+    .contacts-textlinks {
+        /* background-color: rgb(177, 255, 255) !important; */
+    }
+    .contacts-feedback {
+        /* background-color: rgb(218, 179, 255) !important; */
+    }
+    .contacts-textlinks .vertical {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+    .contacts-links {
+        margin: 15px 0px;
+    }
+    .contacts-feedback {
+        padding: 25px !important;
+        margin: 0px auto !important;
+        justify-content: center;
+        text-align: center;
+    }
+    .title-feedback {
+        width: fit-content;
+        margin: 0 auto !important;
+        
+    }
+    .contacts-feedback form {
+        width: 100%;
+        max-width: 400px;
+        margin: 0px auto;
+    }
 }

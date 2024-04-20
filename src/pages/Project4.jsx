@@ -4,23 +4,25 @@ import Header from "../components/header-project"
 import Footer from "../components/footer"
 import PNG_IMAGES from '../img/Project1/PNG/index'
 
-import {createCarousel} from '../scripts/newSlider'
+import { createCarousel } from '../scripts/newSlider'
 
 import '../css/temp/carousel.css'
 import '../css/temp/styles.css'
 
 export default function Project4() {
-    
+
     useEffect(() => {
         const handleLoad = () => {
-            createCarousel();
+            if (!window.matchMedia("(max-width: 1500px)").matches) {
+                createCarousel();
+            } else { }
         };
         window.addEventListener('load', handleLoad);
         return () => {
             window.removeEventListener('load', handleLoad);
         };
     }, []);
-    
+
     function changeText() {
         const myTitle = document.querySelector('#title');
         const myText = document.querySelector('#text');
@@ -34,8 +36,8 @@ export default function Project4() {
             <Header />
             <main>
                 <div className="project-grid fade-2">
-                    <div id="d1" onClick={changeText}>
-                        <div id='title' className="project-title center">More<br/>...</div>
+                    <div id="d1" onClick={changeText} className='fade-3'>
+                        <div id='title' className="project-title center">More<br />...</div>
                         <div id='text' className="project-text hide">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias magni, quae totam at dolor aspernatur illo nulla quas exercitationem sit error! Molestiae at vero laboriosam magni, deleniti eligendi aliquam dolor?
                         </div>
@@ -67,14 +69,16 @@ export default function Project4() {
                                 <img className="center" src={PNG_IMAGES.img8} alt="" />
                             </div>
                         </div>
-                        <div className="my-carousel-btn btn-prev" id="btn-prev"></div>
-                        <div className="my-carousel-btn btn-next" id="btn-next"></div>
-                        <div className="my-carousel-indicator-container"></div>
+                        {/* <div className="my-carousel-btn btn-prev" id="btn-prev"></div> */}
+                        {/* <div className="my-carousel-btn btn-next" id="btn-next"></div> */}
                     </div>
                     <div id="d3"></div>
                 </div>
-                <div className="project-name fade-3">
-                    OLN-36B
+                <div className="my-carousel-bottom fade-3">
+                    <div className="my-carousel-indicator-container"></div>
+                    <div className="project-name">
+                        OLN-36B
+                    </div>
                 </div>
             </main>
             <Footer />

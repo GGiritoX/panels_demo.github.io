@@ -2,7 +2,7 @@ footer {
     text-align: center;
     margin: 25px;
     margin-top: 75px;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 400;
 }
 
@@ -23,7 +23,7 @@ footer * {
     display: inline;
     gap: 0 5px;
     align-content: center;
-    margin: 0px 55px;
+    /* margin: 0px 55px; */
 }
 
 .footer-links.vertical {
@@ -48,5 +48,6 @@ footer * {
 }
 
 .footer-links a:hover {
-    font-weight: 600;
+    /* font-weight: 600; */
+    text-decoration: underline !important;
 }
