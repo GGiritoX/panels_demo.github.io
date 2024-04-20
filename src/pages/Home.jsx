@@ -11,7 +11,7 @@ export default function Home() {
                 <div className="content fade-2">
                     <div className="panels">
                         <div className="panel">
-                            <a href="Project3">
+                            <a href="Project4">
                                 <img className="bw-image" href="Project1" src={IMAGES.img1} alt="" />
                                 <div className="panel-text">OLN-36B</div>
                             </a>

@@ -23,6 +23,18 @@ export default function Project4() {
         };
     }, []);
 
+    useEffect(() => {
+        const handleResize = () => {
+            if (!window.matchMedia("(max-width: 1500px)").matches) {
+                //DELETE CAROUSEL
+            } else { createCarousel(); }
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     function changeText() {
         const myTitle = document.querySelector('#title');
         const myText = document.querySelector('#text');

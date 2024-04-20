@@ -36,14 +36,6 @@
     margin-bottom: 24px;
 }
 
-.contacts-links {
-    /* border: 2px dashed orange; */
-}
-
-.contacts-links a {
-    /* border: 1px solid red; */
-}
-
 .contacts-feedback form {
     display: grid;
     width: 380px;
@@ -119,12 +111,6 @@ textarea::-webkit-input-placeholder {
         display: none;
     }
 
-    .contacts-textlinks {
-        /* background-color: rgb(177, 255, 255) !important; */
-    }
-    .contacts-feedback {
-        /* background-color: rgb(218, 179, 255) !important; */
-    }
     .contacts-textlinks .vertical {
         display: grid;
         justify-content: center;
@@ -140,8 +126,7 @@ textarea::-webkit-input-placeholder {
         text-align: center;
     }
     .title-feedback {
-        width: fit-content;
-        margin: 0 auto !important;
+        display: none;
         
     }
     .contacts-feedback form {
