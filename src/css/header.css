@@ -46,6 +46,8 @@ header a {
 .sideMenuButton button {
     background-color: transparent;
     border: none;
+    
+    transition: all .5s ease-in-out;
 }
 
 .sideMenuButton svg {
