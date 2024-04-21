@@ -13,9 +13,13 @@ export default function Project4() {
 
     useEffect(() => {
         const handleLoad = () => {
+            createCarousel();
+            let indicators = document.querySelector('.my-carousel-indicator-container');
             if (!window.matchMedia("(max-width: 1500px)").matches) {
-                createCarousel();
-            } else { }
+                console.log('carousel created');
+            } else {
+                indicators.hidden = true;
+            }
         };
         window.addEventListener('load', handleLoad);
         return () => {
@@ -25,9 +29,37 @@ export default function Project4() {
 
     useEffect(() => {
         const handleResize = () => {
+            let indicators = document.querySelector('.my-carousel-indicator-container');
+            // if (!window.matchMedia("(max-width: 1500px)").matches) {
+            //     if (indicatorsContainer.hasChildNodes()) {
+            //         console.log('normal size');
+            //     } else {
+            //         console.log('create');
+            //         createCarousel();
+            //     }
+            // } else {
+            //     //DELETE CAROUSEL
+            //     if (indicatorsContainer.hasChildNodes()) {
+            //         while(indicatorsContainer.hasChildNodes()) {
+            //             indicatorsContainer.removeChild(indicatorsContainer.firstChild);
+            //         }
+            //         console.log('delete');
+            //     } else {
+            //         console.log('null');
+            //     }
+            // }
             if (!window.matchMedia("(max-width: 1500px)").matches) {
-                //DELETE CAROUSEL
-            } else { createCarousel(); }
+                if(indicators.hidden) {
+                    indicators.hidden = false; // normal view
+                    console.log('carousel show');
+                }
+            }else {
+                // small size
+                if(!indicators.hidden){
+                    indicators.hidden = true;
+                    console.log('carousel hide');
+                }
+            }
         };
         window.addEventListener('resize', handleResize);
         return () => {

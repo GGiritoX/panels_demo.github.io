@@ -54,6 +54,7 @@ footer * {
 
 @media screen and (max-width: 1500px) {
     .footer-links {
+        text-align: left;
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 1;

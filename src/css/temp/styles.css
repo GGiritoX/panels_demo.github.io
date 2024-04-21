@@ -12,10 +12,14 @@
         cursor: pointer;
     }
 
-    #title,
-    #text {
+    #title{
         transition: 1s ease-in-out;
         font-size: 20px;
+        font-weight: 400;
+    }
+    #text {
+        transition: 1s ease-in-out;
+        font-size: 16px;
         font-weight: 400;
     }
 

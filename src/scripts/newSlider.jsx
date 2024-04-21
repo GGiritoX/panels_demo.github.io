@@ -3,25 +3,25 @@
 // document.addEventListener("DOMContentLoaded", function () {
 export function createCarousel() {
     const slides = document.querySelectorAll('.my-carousel-item');
-    // console.log(slides);
     const indicatorsContainer = document.querySelector('.my-carousel-indicator-container');
     let currentSlide = 0;
     let duration = 7000;
     let timer = setInterval(nextSlide, duration);
 
+    //prev next buttoms
+    /*
+    const myPrevBtn = document.querySelector('#btn-prev');
+    const myNextBtn = document.querySelector('#btn-next');
 
-    // const myPrevBtn = document.querySelector('#btn-prev');
-    // const myNextBtn = document.querySelector('#btn-next');
-
-    // myPrevBtn.addEventListener('click', function () {
-    //     prevSlide();
-    //     resetTimer();
-    // });
-    // myNextBtn.addEventListener('click', function () {
-    //     nextSlide();
-    //     resetTimer();
-    // });
-
+    myPrevBtn.addEventListener('click', function () {
+        prevSlide();
+        resetTimer();
+    });
+    myNextBtn.addEventListener('click', function () {
+        nextSlide();
+        resetTimer();
+    });
+    */
 
     // Create indicators
     slides.forEach((slide, index) => {
@@ -37,7 +37,6 @@ export function createCarousel() {
         });
         indicatorsContainer.appendChild(indicator);
     });
-
 
     function nextSlide() {
         currentSlide = (currentSlide + 1) % slides.length;
@@ -75,5 +74,9 @@ export function createCarousel() {
     function resetTimer() {
         clearInterval(timer);
         timer = setInterval(nextSlide, duration);
+    }
+    function disableIndicators() {
+        clearInterval(timer);
+        currentSlide = 0;
     }
 }
