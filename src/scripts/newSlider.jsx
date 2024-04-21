@@ -75,8 +75,4 @@ export function createCarousel() {
         clearInterval(timer);
         timer = setInterval(nextSlide, duration);
     }
-    function disableIndicators() {
-        clearInterval(timer);
-        currentSlide = 0;
-    }
 }
