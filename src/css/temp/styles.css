@@ -3,8 +3,6 @@
         display: grid;
         grid-template-columns: 1fr 2.5fr 1fr;
         grid-auto-rows: 550px;
-        /* 600px resize */
-        /* margin-bottom: 150px; */
     }
 
     #d1 {
