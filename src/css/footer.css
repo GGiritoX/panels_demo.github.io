@@ -1,75 +1,83 @@
 footer {
-    text-align: center;
     margin: 25px;
     margin-top: 75px;
     font-size: 14px;
     font-weight: 400;
 }
-
-footer * {
-    margin: 0;
-    padding: 0;
-}
-/* ========================================= */
-
-
 .footer-container {
     display: grid;
-    gap:20px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.footer-links {
-    display: inline;
-    gap: 0 5px;
+.footer-icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     align-content: center;
-    /* margin: 0px 55px; */
+    flex-direction: row;
 }
 
-.footer-links.vertical {
-    grid-template-rows: repeat(auto-fit, minmax(30px, 1fr));
-    align-items: start;
+.footer-icon {
+    margin: 0px 3%;
 }
-.footer-links.horizontal{
-    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+
+.footer-text-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
 }
 
 .footer-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
-.footer-links a {
+.footer-links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+.footer-link {
+    margin: 0px 2%;
+}
+.footer-link a {
     text-decoration: none !important;
     color: black;
-    margin-top: 5px;
-    margin: 5px 10px;
 }
 
-.footer-links a:hover {
-    /* font-weight: 600; */
+.footer-link a:hover {
     text-decoration: underline !important;
 }
 
-@media screen and (max-width: 1500px) {
-    .footer-links {
-        text-align: left;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
+@media screen and (max-width: 1024px) {
+    .footer-container {
+        grid-template-columns: 1fr;
     }
-    .footer-links.horizontal {
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-    .footer-text {
-        grid-column-start: 1;
-        grid-column-end: 4;
+    .footer-icons-container {
+        /* text-align: left; */
+        /* grid-column-start: 1; */
+        /* grid-column-end: 2; */
         grid-row-start: 2;
         grid-row-end: 3;
+    }
+    .footer-links-container {
+        /* grid-column-start: 2; */
+        /* grid-column-end: 3; */
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .footer-text-container {
+        /* margin-top: 10px; */
+        /* grid-column-start: 1; */
+        /* grid-column-end: 3; */
+        grid-row-start: 3;
+        grid-row-end: 4;
     }
 }

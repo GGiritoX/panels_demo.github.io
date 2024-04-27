@@ -1,6 +1,6 @@
 
 import SideMenu from "./sidemenu"
-
+import "../css/header.css";
 
 export default function Header() {
     return (

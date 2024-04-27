@@ -1,14 +1,64 @@
-.services-text {
+.services-container {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+
+    margin-top: 80px;
+    margin-bottom: 400px;
 }
 
-.services-text div {
-    padding: 15px;
-    margin: 0 15px;
-    border: 2px solid grey;
-    border-radius: 25px;
-    height: 150px;
-    background-color: rgba(255, 255, 255, 0.2);
+.services-list-container,
+.services-text-container {
+    margin: 0 10%;
+}
+
+.services-text-container {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 50px;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+}
+
+.services-list-container {}
+
+.services-list-item {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    font-weight: 500;
+    size: 20px;
+}
+
+.services-list-marker {
+    background-color: transparent;
+    border: 1px solid white !important;
+    border-radius: 15px;
+    width: 52px;
+    height: 4px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .services-container {
+        flex-direction: column;
+    }
+
+    .services-list-container,
+    .services-text-container {
+        margin: 0;
+    }
+    .services-text-container {
+        /* text-align: center; */
+    }
+    .services-list-container {
+        margin-top: 45px;
+    }
 }

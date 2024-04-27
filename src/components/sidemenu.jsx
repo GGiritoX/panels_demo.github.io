@@ -2,6 +2,7 @@ import { useState } from 'react';
 // import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "../css/sidemenu.css";
 
 export default function SideMenu() {
   const [show, setShow] = useState(false);

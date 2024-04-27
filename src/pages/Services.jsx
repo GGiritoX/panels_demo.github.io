@@ -9,16 +9,35 @@ export default function Services() {
             <Header />
             <main>
 
-                <div className="services-text fade-2" style={{height: "1000px"}}>
-                    <div>Створення концепцій</div>
-                    <div>Арт дирекція</div>
-                    <div>Проектування простору</div>
-                    <div>Комплексна розробка проектної документації</div>
-                    <div>Комерційна візуалізація</div>
-                
+                <div className="services-container fade-2">
+                    <div className="services-text-container">
+                        WE PROVIDE
+                    </div>
+                    <div className="services-list-container">
+                        <div className="services-list-item">
+                            <div className="services-list-marker"></div>
+                            Concept Creation
+                        </div>
+                        <div className="services-list-item">
+                            <div className="services-list-marker"></div>
+                            Art Direction
+                        </div>
+                        <div className="services-list-item">
+                            <div className="services-list-marker"></div>
+                            Spatial Planning
+                        </div>
+                        <div className="services-list-item">
+                            <div className="services-list-marker"></div>
+                            Full-cycle Design
+                        </div>
+                        <div className="services-list-item">
+                            <div className="services-list-marker"></div>
+                            Commercial Visualization
+                        </div>
+                    </div>
                 </div>
             </main>
-            <Footer />
+            <Footer/>
         </>
     )
 }

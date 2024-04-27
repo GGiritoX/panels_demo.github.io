@@ -97,7 +97,7 @@ textarea::-webkit-input-placeholder {
 
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1024px) {
     .contacts-middle {
         margin-top: 0px;
         /* border: 2px dashed red; */
@@ -118,7 +118,9 @@ textarea::-webkit-input-placeholder {
         text-align: center;
     }
     .contacts-links {
-        margin: 15px 0px;
+        /* margin: 15px 0px; */
+        margin-top: 40px;
+        margin-bottom: 0px;
     }
     .contacts-feedback {
         padding: 25px !important;

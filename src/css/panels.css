@@ -34,7 +34,7 @@
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
     .panels {
         grid-template-columns: repeat(4, 1fr);
     }

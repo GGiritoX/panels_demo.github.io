@@ -1,65 +1,118 @@
+import React, { useEffect } from 'react';
+
 import Header from "../components/header-project"
 import Footer from "../components/footer"
-import Carousel from 'react-bootstrap/Carousel'
-import IMAGES from '../img/Project1/index'
+import PNG_IMAGES from '../img/Project1/PNG/index'
 
+import { createCarousel } from '../scripts/newCarousel'
+
+import '../css/project-page/carousel.css'
+import '../css/project-page/styles.css'
 
 export default function Project1() {
-    const textSwitch = () => {
-        var descriptionText = document.getElementById("descriptionText");
-        var fullDescription = document.getElementById("fullDescription");
-        descriptionText.classList.toggle("show");
-        descriptionText.classList.toggle("hide");
-        fullDescription.classList.toggle("show");
-        fullDescription.classList.toggle("hide");
-    };
+
+    useEffect(() => {
+        const handleLoad = () => {
+            createCarousel();
+            let indicators = document.querySelector('.my-carousel-indicator-container');
+            if (!window.matchMedia("(max-width: 1024px)").matches) {
+                // console.log('carousel created');
+            } else {
+                indicators.hidden = true;
+            }
+        };
+        window.addEventListener('load', handleLoad);
+        return () => {
+            window.removeEventListener('load', handleLoad);
+        };
+    }, []);
+
+    useEffect(() => {
+        const handleResize = () => {
+            let indicators = document.querySelector('.my-carousel-indicator-container');
+
+            if (!window.matchMedia("(max-width: 1024px)").matches) {
+                if (indicators.hidden) {
+                    indicators.hidden = false; // normal view
+                    // console.log('carousel show');
+                }
+            } else {
+                // small size
+                if (!indicators.hidden) {
+                    indicators.hidden = true;
+                    // console.log('carousel hide');
+                }
+            }
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    function changeText() {
+        const myTitle = document.querySelector('#title');
+        const myText = document.querySelector('#text');
+        myTitle.classList.toggle('hide');
+        myText.classList.toggle('hide');
+    }
+
+
     return (
         <>
             <Header />
             <main>
-                <div className="wrapper fade-2">
-                    <div className="description" onClick={textSwitch}>
-                        <div className="description-text show" id="descriptionText">More<br />...</div>
-                        <div className="description-full hide" id="fullDescription">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptas odio necessitatibus adipisci ullam, doloremque nesciunt incidunt vel, numquam maxime sapiente voluptatibus perspiciatis laborum quo quasi ut nisi reprehenderit expedita.
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quos harum esse at! Possimus, ex corporis recusandae quasi ducimus eos similique ea praesentium error non deserunt, quisquam minima! Eius, quam.
+                <div className="project-grid fade-2">
+                    <div id="d1" onClick={changeText} className='fade-3'>
+                        <div id='title' className="project-title center">More<br />...</div>
+                        <div id='text' className="project-text hide">
+                            Location: Kyiv, Ukraine<br />
+                            Year: 2017<br />
+                            Area: 120 sq.m.<br />
+                            <br />
+                            Part of apartment for young couple.
+                            During the design of this residence, a palette of light shades was used, creating a sense of spaciousness and luminosity.
+                            <br /><br />
+                            The open layout of the apartment allows light to circulate freely, giving every corner of the dwelling a cozy and comfortable atmosphere. The furniture is designed in a modern style using natural materials and minimalist forms, adding elegance and lightness to the interior.
                         </div>
                     </div>
-                    <div className="images">
-                        <Carousel fade={true} /* indicators={false}*/ controls={false}>
-                            <Carousel.Item interval={3000} style={{ scale: "1", transform: 'translate(0%, 0%)' }}>
-                                <img src={IMAGES.img1} alt="" /> {/*className="d-block w-100 h-100" */}
-                            </Carousel.Item>
-                            <Carousel.Item interval={3000} style={{ scale: "1", transform: 'translate(0%, 0%)' }}>
-                                <img src={IMAGES.img2} alt=""/>
-                                <img src={IMAGES.img2_2} alt=""/>
-                            </Carousel.Item>
-                            <Carousel.Item interval={3000} style={{ scale: "1", transform: 'translate(0%, 0%)' }}>
-                                <img src={IMAGES.img3} alt="" />
-                            </Carousel.Item>
-                            <Carousel.Item interval={3000} style={{ scale: "1", transform: 'translate(0%, 0%)' }}>
-                                <img src={IMAGES.img4} alt="" />
-                            </Carousel.Item>
-                            <Carousel.Item interval={3000} style={{ scale: "1", transform: 'translate(0%, 0%)' }}>
-                                <img src={IMAGES.img5} alt="" />
-                            </Carousel.Item>
-                            <Carousel.Item interval={3000} style={{ scale: "1", transform: 'translate(0%, 0%)' }}>
-                                <img src={IMAGES.img6} alt=""/>
-                                <img src={IMAGES.img6_2} alt=""/>
-                            </Carousel.Item>
-                            <Carousel.Item interval={3000} style={{ scale: "1", transform: 'translate(0%, 0%)' }}>
-                                <img src={IMAGES.img7} alt="" />
-                            </Carousel.Item>
-                            <Carousel.Item interval={3000} style={{ scale: "1", transform: 'translate(0%, 0%)' }}>
-                                <img src={IMAGES.img8} alt="" />
-                            </Carousel.Item>
-                            
-                        </Carousel>
+                    <div id="d2">
+                        <div className="project-carousel">
+                            <div className="my-carousel-item">
+                                <img className="center" src={PNG_IMAGES.img1} alt="" />
+                            </div>
+                            <div className="my-carousel-item">
+                                <img className="center" src={PNG_IMAGES.img2} alt="" />
+                            </div>
+                            <div className="my-carousel-item">
+                                <img className="center" src={PNG_IMAGES.img3} alt="" />
+                            </div>
+                            <div className="my-carousel-item">
+                                <img className="center" src={PNG_IMAGES.img4} alt="" />
+                            </div>
+                            <div className="my-carousel-item">
+                                <img className="center" src={PNG_IMAGES.img5} alt="" />
+                            </div>
+                            <div className="my-carousel-item">
+                                <img className="center" src={PNG_IMAGES.img6} alt="" />
+                            </div>
+                            <div className="my-carousel-item">
+                                <img className="center" src={PNG_IMAGES.img7} alt="" />
+                            </div>
+                            <div className="my-carousel-item">
+                                <img className="center" src={PNG_IMAGES.img8} alt="" />
+                            </div>
+                        </div>
+                        {/* <div className="my-carousel-btn btn-prev" id="btn-prev"></div> */}
+                        {/* <div className="my-carousel-btn btn-next" id="btn-next"></div> */}
                     </div>
-                    <div className="space" />
+                    <div id="d3"></div>
                 </div>
-                <div className="projectName fade-3">
-                    OLN-36B
+                <div className="my-carousel-bottom fade-3">
+                    <div className="my-carousel-indicator-container"></div>
+                    <div className="project-name">
+                        OLN
+                    </div>
                 </div>
             </main>
             <Footer />
