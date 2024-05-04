@@ -55,3 +55,6 @@ header a {
     height: 38px;
     color: #787878;
 }
+.sideMenuButton svg:hover {
+    color: black;
+}

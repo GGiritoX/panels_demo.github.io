@@ -23,6 +23,9 @@
     width: -moz-min-content;
     width: min-content;
 }
+.services-text-container span {
+    margin-left: 10px;
+}
 
 .services-list-container {}
 
@@ -46,7 +49,7 @@
     margin-right: 20px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1350px) {
     .services-container {
         flex-direction: column;
     }
@@ -56,7 +59,10 @@
         margin: 0;
     }
     .services-text-container {
-        /* text-align: center; */
+        text-align: center;
+    }
+    .services-text-container span {
+        margin-left: 0px;
     }
     .services-list-container {
         margin-top: 45px;

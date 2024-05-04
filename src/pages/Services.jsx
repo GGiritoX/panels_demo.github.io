@@ -11,7 +11,7 @@ export default function Services() {
 
                 <div className="services-container fade-2">
                     <div className="services-text-container">
-                        WE PROVIDE
+                        WE <span>PROVIDE</span>
                     </div>
                     <div className="services-list-container">
                         <div className="services-list-item">
