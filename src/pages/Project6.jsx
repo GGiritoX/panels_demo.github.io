@@ -2,21 +2,20 @@ import React, { useEffect } from 'react';
 
 import Header from "../components/header-project"
 import Footer from "../components/footer"
-import PNG_IMAGES from '../img/Project1/PNG/index'
+import PNG_IMAGES from '../img/Project6/PNG/index'
 
 import { createCarousel } from '../scripts/newCarousel'
 
 import '../css/project-page/carousel.css'
 import '../css/project-page/styles.css'
 
-export default function Project1() {
+export default function Project6() {
     
     useEffect(() => {
         const handleLoad = () => {
             createCarousel();
             let indicators = document.querySelector('.my-carousel-indicator-container');
             if (!window.matchMedia("(max-width: 1350px)").matches) {
-                // console.log('carousel created');
             } else {
                 indicators.hidden = true;
             }
@@ -34,13 +33,11 @@ export default function Project1() {
             if (!window.matchMedia("(max-width: 1350px)").matches) {
                 if (indicators.hidden) {
                     indicators.hidden = false; // normal view
-                    // console.log('carousel show');
                 }
             } else {
                 // small size
                 if (!indicators.hidden) {
                     indicators.hidden = true;
-                    // console.log('carousel hide');
                 }
             }
         };
@@ -66,14 +63,11 @@ export default function Project1() {
                     <div id="d1" onClick={changeText} className='fade-3'>
                         <div id='title' className="project-title center">More<br />...</div>
                         <div id='text' className="project-text hide">
-                            Location: Kyiv, Ukraine<br />
-                            Year: 2017<br />
-                            Area: 120 sq.m.<br />
+                            Location: <br />
+                            Year: <br />
+                            Area: <br />
                             <br />
-                            Part of apartment for young couple.
-                            During the design of this residence, a palette of light shades was used, creating a sense of spaciousness and luminosity.
-                            <br /><br />
-                            The open layout of the apartment allows light to circulate freely, giving every corner of the dwelling a cozy and comfortable atmosphere. The furniture is designed in a modern style using natural materials and minimalist forms, adding elegance and lightness to the interior.
+                            Text
                         </div>
                     </div>
                     <div id="d2">
@@ -93,15 +87,6 @@ export default function Project1() {
                             <div className="my-carousel-item">
                                 <img className="center" src={PNG_IMAGES.img5} alt="" />
                             </div>
-                            <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img6} alt="" />
-                            </div>
-                            <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img7} alt="" />
-                            </div>
-                            <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img8} alt="" />
-                            </div>
                         </div>
                         {/* <div className="my-carousel-btn btn-prev" id="btn-prev"></div> */}
                         {/* <div className="my-carousel-btn btn-next" id="btn-next"></div> */}
@@ -111,7 +96,7 @@ export default function Project1() {
                 <div className="my-carousel-bottom fade-3">
                     <div className="my-carousel-indicator-container"></div>
                     <div className="project-name">
-                        OLN
+                        SVN7
                     </div>
                 </div>
             </main>

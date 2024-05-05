@@ -6,13 +6,13 @@
     align-content: center;
     flex-direction: row;
 
-    margin-top: 80px;
+    margin-top: 125px;
     margin-bottom: 400px;
 }
 
 .services-list-container,
 .services-text-container {
-    margin: 0 10%;
+    margin: 0 13%;
 }
 
 .services-text-container {
@@ -36,8 +36,8 @@
     align-items: center;
     align-content: center;
     flex-direction: row;
-    font-weight: 500;
-    size: 20px;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 .services-list-marker {

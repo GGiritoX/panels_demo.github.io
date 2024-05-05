@@ -1,6 +1,6 @@
 import Header from "../components/header-main"
 import Footer from "../components/footer"
-import IMAGES from '../img/tiles/index'
+import IMAGES from '../img/titles/index'
 
 import "../css/panels.css"
 import "../css/bwstyle.css"
@@ -27,7 +27,7 @@ export default function Home() {
                         <div className="panel">
                             <a href="/Project3">
                                 <img className="bw-image" href="Project3" src={IMAGES.img3} alt="" />
-                                <div className="panel-text">Project</div>
+                                <div className="panel-text">PRJT</div>
                             </a>
                         </div>
                         <div className="panel">
@@ -51,7 +51,7 @@ export default function Home() {
                         <div className="panel">
                             <a href="/Project7">
                                 <img className="bw-image" href="Project7" src={IMAGES.img7} alt="" />
-                                <div className="panel-text">BH71</div>
+                                <div className="panel-text">ZOO6</div>
                             </a>
                         </div>
                         <div className="panel">
@@ -63,7 +63,7 @@ export default function Home() {
                         <div className="panel">
                             <a href="/Project9">
                                 <img className="bw-image" href="Project9" src={IMAGES.img9} alt="Project9" />
-                                <div className="panel-text">ODM231</div>
+                                <div className="panel-text">DM231</div>
                             </a>
                         </div>
                         <div className="panel">
@@ -75,7 +75,7 @@ export default function Home() {
                         <div className="panel">
                             <a href="/Project11">
                                 <img className="bw-image" href="Project11" src={IMAGES.img11} alt="Project11" />
-                                <div className="panel-text">ZOO6</div>
+                                <div className="panel-text">BH71</div>
                             </a>
                         </div>
                         <div className="panel">

@@ -2,15 +2,15 @@ import React, { useEffect } from 'react';
 
 import Header from "../components/header-project"
 import Footer from "../components/footer"
-import PNG_IMAGES from '../img/Project1/PNG/index'
+import PNG_IMAGES from '../img/Project4/PNG/index'
 
 import { createCarousel } from '../scripts/newCarousel'
 
 import '../css/project-page/carousel.css'
 import '../css/project-page/styles.css'
 
-export default function Project1() {
-    
+export default function Project4() {
+
     useEffect(() => {
         const handleLoad = () => {
             createCarousel();
@@ -66,14 +66,12 @@ export default function Project1() {
                     <div id="d1" onClick={changeText} className='fade-3'>
                         <div id='title' className="project-title center">More<br />...</div>
                         <div id='text' className="project-text hide">
-                            Location: Kyiv, Ukraine<br />
-                            Year: 2017<br />
-                            Area: 120 sq.m.<br />
-                            <br />
-                            Part of apartment for young couple.
-                            During the design of this residence, a palette of light shades was used, creating a sense of spaciousness and luminosity.
-                            <br /><br />
-                            The open layout of the apartment allows light to circulate freely, giving every corner of the dwelling a cozy and comfortable atmosphere. The furniture is designed in a modern style using natural materials and minimalist forms, adding elegance and lightness to the interior.
+                            Location: Boryspil, Ukraine<br/>
+                            Year: 2021<br/>
+                            Area: 80 sq.m.<br/>
+                            <br/>
+                            <br/>
+                            Family dining establishment. Upon opening, the vegetarian menu was something fresh and new. The colors and lightness of the design highlight the delicious dishes offered to visitors at One More Meal<br/>
                         </div>
                     </div>
                     <div id="d2">
@@ -99,9 +97,6 @@ export default function Project1() {
                             <div className="my-carousel-item">
                                 <img className="center" src={PNG_IMAGES.img7} alt="" />
                             </div>
-                            <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img8} alt="" />
-                            </div>
                         </div>
                         {/* <div className="my-carousel-btn btn-prev" id="btn-prev"></div> */}
                         {/* <div className="my-carousel-btn btn-next" id="btn-next"></div> */}
@@ -111,7 +106,7 @@ export default function Project1() {
                 <div className="my-carousel-bottom fade-3">
                     <div className="my-carousel-indicator-container"></div>
                     <div className="project-name">
-                        OLN
+                        OMM
                     </div>
                 </div>
             </main>
