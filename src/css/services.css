@@ -52,6 +52,8 @@
 @media screen and (max-width: 1350px) {
     .services-container {
         flex-direction: column;
+        margin-top: 25px;
+        margin-bottom: 200px;
     }
 
     .services-list-container,

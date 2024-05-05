@@ -3,7 +3,7 @@
     font-weight: 400;
     --bs-offcanvas-transition: transform 1s ease-in-out;
     --bs-offcanvas-color: black;
-    --bs-offcanvas-bg: rgba(255, 255, 255, 0.6);
+    --bs-offcanvas-bg: rgba(255, 255, 255, 0.85);
     --bs-border-width: 0px !important;
     /* --bs-offcanvas-zindex: 1045; */
     --bs-offcanvas-width: 520px;
@@ -28,9 +28,9 @@
 }
 
 .offcanvas-body {
-    padding-top: 256px;
+    padding-top: 34%;
     text-align: left;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
 .offcanvas-body a {
