@@ -3,7 +3,7 @@
     font-weight: 400;
     --bs-offcanvas-transition: transform 1s ease-in-out;
     --bs-offcanvas-color: black;
-    --bs-offcanvas-bg: rgba(255, 255, 255, 0.75);
+    --bs-offcanvas-bg: rgba(255, 255, 255, 0.6);
     --bs-border-width: 0px !important;
     /* --bs-offcanvas-zindex: 1045; */
     --bs-offcanvas-width: 520px;
@@ -30,7 +30,7 @@
 .offcanvas-body {
     padding-top: 256px;
     text-align: left;
-    margin-left: 200px;
+    margin: 0px auto;
 }
 
 .offcanvas-body a {
@@ -42,4 +42,10 @@
 
 .offcanvas-body a:hover {
     text-decoration: underline !important;
+}
+@media screen and (max-width: 500px) {
+    .btn-close {
+        margin-right: 15px !important;
+        margin-top: 55px !important;
+    }   
 }

@@ -14,10 +14,6 @@ header a {
     color: #787878;
 }
 
-@media (min-width: 600px) {}
-
-@media (min-width: 900px) {}
-
 .header-container {
     position: relative;
 }
@@ -57,4 +53,10 @@ header a {
 }
 .sideMenuButton svg:hover {
     color: black;
+}
+
+@media screen and (max-width: 500px) {
+    .sideMenuButton {
+        margin-right: 25px;
+    }   
 }

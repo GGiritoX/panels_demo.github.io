@@ -1,7 +1,8 @@
 footer {
     margin: 25px;
-    margin-top: 75px;
-    font-size: 14px;
+    margin-top: 225px;
+    font-size: 15px;
+    /* font-size: 80%; */
     font-weight: 400;
 }
 .footer-container {

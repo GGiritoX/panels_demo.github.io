@@ -30,7 +30,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="footer-text-container">
-                    <div className="footer-text">Copyright @ Oleksii Taran, 2024. All rights reserved</div>
+                    <div className="footer-text">© Oleksii Taran, 2024. All rights reserved</div>
                 </div>
                 <div className="footer-links-container">
                     <div className="footer-link"><a href="/">Projects</a></div>
