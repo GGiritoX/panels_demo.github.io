@@ -15,7 +15,7 @@ export default function Project2() {
         const handleLoad = () => {
             createCarousel();
             let indicators = document.querySelector('.my-carousel-indicator-container');
-            if (!window.matchMedia("(max-width: 1350px)").matches) {
+            if (!window.matchMedia("(max-width: 1400px)").matches) {
                 // console.log('carousel created');
             } else {
                 indicators.hidden = true;
@@ -31,7 +31,7 @@ export default function Project2() {
         const handleResize = () => {
             let indicators = document.querySelector('.my-carousel-indicator-container');
 
-            if (!window.matchMedia("(max-width: 1350px)").matches) {
+            if (!window.matchMedia("(max-width: 1400px)").matches) {
                 if (indicators.hidden) {
                     indicators.hidden = false; // normal view
                     // console.log('carousel show');

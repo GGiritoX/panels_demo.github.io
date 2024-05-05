@@ -37,7 +37,7 @@
     align-content: center;
     flex-direction: row;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .services-list-marker {
@@ -49,11 +49,11 @@
     margin-right: 20px;
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1400px) {
     .services-container {
         flex-direction: column;
         margin-top: 25px;
-        margin-bottom: 200px;
+        margin-bottom: 250px;
     }
 
     .services-list-container,

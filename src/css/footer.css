@@ -57,7 +57,7 @@ footer {
     text-decoration: underline !important;
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1400px) {
     .footer-container {
         grid-template-columns: 1fr;
     }

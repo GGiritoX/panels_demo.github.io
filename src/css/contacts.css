@@ -97,7 +97,7 @@ textarea::-webkit-input-placeholder {
 
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1400px) {
     .contacts-middle {
         margin-top: 0px;
         /* border: 2px dashed red; */

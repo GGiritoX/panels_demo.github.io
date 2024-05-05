@@ -1,6 +1,6 @@
 
 /* ====================================================================================== */
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 1400px) {
     .project-grid {
         display: grid;
         grid-template-columns: 1fr 2.5fr 1fr;
@@ -107,7 +107,7 @@
     }
 }
 /* ====================================================================================== */
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1400px) {
 
     #d1,
     #d3 {
@@ -143,11 +143,11 @@
         text-align: center;
     }
 }
-@media (min-width: 1351px) and (max-width: 1700px) {
+/* @media (min-width: 1351px) and (max-width: 1700px) {
     .project-grid {
         grid-auto-rows: 400px;
     }
     .project-text {
         padding: 35px;
     }
-}
+} */
