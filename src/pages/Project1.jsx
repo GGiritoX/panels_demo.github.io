@@ -5,15 +5,18 @@ import Footer from "../components/footer"
 import PNG_IMAGES from '../img/Project1/PNG/index'
 
 import { createCarousel } from '../scripts/newCarousel'
+import { createFullscreenView } from '../scripts/fullscreenImage'
 
 import '../css/project-page/carousel.css'
 import '../css/project-page/styles.css'
+import '../css/project-page/fullscreen.css'
 
 export default function Project1() {
-    
+
     useEffect(() => {
         const handleLoad = () => {
             createCarousel();
+            createFullscreenView();
             let indicators = document.querySelector('.my-carousel-indicator-container');
             if (!window.matchMedia("(max-width: 1400px)").matches) {
                 // console.log('carousel created');
@@ -79,28 +82,28 @@ export default function Project1() {
                     <div id="d2">
                         <div className="project-carousel">
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img1} alt="" />
+                                <img className="center" src={PNG_IMAGES.img1} alt="" loading="lazy" />
                             </div>
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img2} alt="" />
+                                <img className="center" src={PNG_IMAGES.img2} alt="" loading="lazy" />
                             </div>
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img3} alt="" />
+                                <img className="center" src={PNG_IMAGES.img3} alt="" loading="lazy" />
                             </div>
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img4} alt="" />
+                                <img className="center" src={PNG_IMAGES.img4} alt="" loading="lazy" />
                             </div>
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img5} alt="" />
+                                <img className="center" src={PNG_IMAGES.img5} alt="" loading="lazy" />
                             </div>
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img6} alt="" />
+                                <img className="center" src={PNG_IMAGES.img6} alt="" loading="lazy" />
                             </div>
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img7} alt="" />
+                                <img className="center" src={PNG_IMAGES.img7} alt="" loading="lazy" />
                             </div>
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img8} alt="" />
+                                <img className="center" src={PNG_IMAGES.img8} alt="" loading="lazy" />
                             </div>
                         </div>
                         {/* <div className="my-carousel-btn btn-prev" id="btn-prev"></div> */}

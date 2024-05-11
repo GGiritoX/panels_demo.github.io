@@ -75,58 +75,58 @@ export default function Project9() {
                     <div id="d2">
                         <div className="project-carousel">
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img1} alt="" />
+                                <img className="center" src={PNG_IMAGES.img1} alt="" loading="lazy" />
                             </div>
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img2} alt="" />
+                                <img className="center" src={PNG_IMAGES.img2} alt="" loading="lazy" />
                             </div>
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img3} alt="" />
+                                <img className="center" src={PNG_IMAGES.img3} alt="" loading="lazy" />
                             </div>
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img4} alt="" />
+                                <img className="center" src={PNG_IMAGES.img4} alt="" loading="lazy" />
                             </div>
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img5} alt="" />
+                                <img className="center" src={PNG_IMAGES.img5} alt="" loading="lazy" />
                             </div>
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img6} alt="" />
+                                <img className="center" src={PNG_IMAGES.img6} alt="" loading="lazy" />
                             </div>
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img7} alt="" />
+                                <img className="center" src={PNG_IMAGES.img7} alt="" loading="lazy" />
                             </div>
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img8} alt="" />
+                                <img className="center" src={PNG_IMAGES.img8} alt="" loading="lazy" />
                             </div>
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img9} alt="" />
+                                <img className="center" src={PNG_IMAGES.img9} alt="" loading="lazy" />
                             </div>
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img10} alt="" />
+                                <img className="center" src={PNG_IMAGES.img10} alt="" loading="lazy" />
                             </div>
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img11} alt="" />
+                                <img className="center" src={PNG_IMAGES.img11} alt="" loading="lazy" />
                             </div>
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img12} alt="" />
+                                <img className="center" src={PNG_IMAGES.img12} alt="" loading="lazy" />
                             </div>
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img13} alt="" />
+                                <img className="center" src={PNG_IMAGES.img13} alt="" loading="lazy" />
                             </div>
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img14} alt="" />
+                                <img className="center" src={PNG_IMAGES.img14} alt="" loading="lazy" />
                             </div>
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img15} alt="" />
+                                <img className="center" src={PNG_IMAGES.img15} alt="" loading="lazy" />
                             </div>
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img16} alt="" />
+                                <img className="center" src={PNG_IMAGES.img16} alt="" loading="lazy" />
                             </div>
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img17} alt="" />
+                                <img className="center" src={PNG_IMAGES.img17} alt="" loading="lazy" />
                             </div>
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img18} alt="" />
+                                <img className="center" src={PNG_IMAGES.img18} alt="" loading="lazy" />
                             </div>
                         </div>
                         {/* <div className="my-carousel-btn btn-prev" id="btn-prev"></div> */}

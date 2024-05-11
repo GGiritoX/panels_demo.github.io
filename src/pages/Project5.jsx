@@ -76,16 +76,16 @@ export default function Project5() {
                     <div id="d2">
                         <div className="project-carousel">
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img1} alt="" />
+                                <img className="center" src={PNG_IMAGES.img1} alt="" loading="lazy" />
                             </div>
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img2} alt="" />
+                                <img className="center" src={PNG_IMAGES.img2} alt="" loading="lazy" />
                             </div>
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img3} alt="" />
+                                <img className="center" src={PNG_IMAGES.img3} alt="" loading="lazy" />
                             </div>
                             <div className="my-carousel-item">
-                                <img className="center" src={PNG_IMAGES.img4} alt="" />
+                                <img className="center" src={PNG_IMAGES.img4} alt="" loading="lazy" />
                             </div>
                         </div>
                         {/* <div className="my-carousel-btn btn-prev" id="btn-prev"></div> */}

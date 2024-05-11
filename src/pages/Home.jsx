@@ -14,49 +14,49 @@ export default function Home() {
                     <div className="panels">
                         <div className="panel">
                             <a href="/Project1">
-                                <img className="bw-image" href="Project1" src={IMAGES.img1} alt="" />
+                                <img className="bw-image" href="Project1" src={IMAGES.img1} alt="" loading="lazy" />
                                 <div className="panel-text">OLN</div>
                             </a>
                         </div>
                         <div className="panel">
                             <a href="/Project2">
-                                <img className="bw-image" href="Project2" src={IMAGES.img2} alt="" />
+                                <img className="bw-image" href="Project2" src={IMAGES.img2} alt="" loading="lazy" />
                                 <div className="panel-text">VLS</div>
                             </a>
                         </div>
                         <div className="panel">
                             <a href="/Project3">
-                                <img className="bw-image" href="Project3" src={IMAGES.img3} alt="" />
+                                <img className="bw-image" href="Project3" src={IMAGES.img3} alt="" loading="lazy" />
                                 <div className="panel-text">PRJT</div>
                             </a>
                         </div>
                         <div className="panel">
                             <a href="/Project4">
-                                <img className="bw-image" href="Project4" src={IMAGES.img4} alt="" />
+                                <img className="bw-image" href="Project4" src={IMAGES.img4} alt="" loading="lazy" />
                                 <div className="panel-text">OMM</div>
                             </a>
                         </div>
                         <div className="panel">
                             <a href="/Project5">
-                                <img className="bw-image" href="Project5" src={IMAGES.img5} alt="" />
+                                <img className="bw-image" href="Project5" src={IMAGES.img5} alt="" loading="lazy" />
                                 <div className="panel-text">PLN</div>
                             </a>
                         </div>
                         <div className="panel">
                             <a href="/Project6">
-                                <img className="bw-image" href="Project6" src={IMAGES.img6} alt="" />
+                                <img className="bw-image" href="Project6" src={IMAGES.img6} alt="" loading="lazy" />
                                 <div className="panel-text">SVN7</div>
                             </a>
                         </div>
                         <div className="panel">
                             <a href="/Project7">
-                                <img className="bw-image" href="Project7" src={IMAGES.img7} alt="" />
+                                <img className="bw-image" href="Project7" src={IMAGES.img7} alt="" loading="lazy" />
                                 <div className="panel-text">ZOO6</div>
                             </a>
                         </div>
                         <div className="panel">
                             <a href="/Project8">
-                                <img className="bw-image" href="Project8" src={IMAGES.img8} alt="" />
+                                <img className="bw-image" href="Project8" src={IMAGES.img8} alt="" loading="lazy" />
                                 <div className="panel-text">LLBN</div>
                             </a>
                         </div>
