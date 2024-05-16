@@ -137,4 +137,8 @@ textarea::-webkit-input-placeholder {
         max-width: 400px;
         margin: 0px auto;
     }
+    input {
+        border-radius: 0 !important;
+        -webkit-appearance: none !important;
+    }
 }
