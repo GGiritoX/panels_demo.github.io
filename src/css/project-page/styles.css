@@ -144,7 +144,7 @@
     }
 
     .preview {
-        border: 3px solid red;
+        /* border: 3px solid red; */
     }
 }
 /* @media (min-width: 1351px) and (max-width: 1700px) {
