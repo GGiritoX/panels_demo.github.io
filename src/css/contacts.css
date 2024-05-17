@@ -78,6 +78,7 @@ input[type="Email"] {
     font-size: 20px;
     margin: 0 auto;
     margin-top: 25px;
+    color: black;
 }
 
 input:focus {
@@ -140,5 +141,8 @@ textarea::-webkit-input-placeholder {
     input {
         border-radius: 0 !important;
         -webkit-appearance: none !important;
+    }
+    textarea {
+        border-radius: 0 !important;
     }
 }

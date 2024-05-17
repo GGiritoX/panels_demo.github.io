@@ -16,7 +16,6 @@ export default function Project1() {
     useEffect(() => {
         const handleLoad = () => {
             createCarousel();
-            // createFullscreenView();
             let indicators = document.querySelector('.my-carousel-indicator-container');
             if (!window.matchMedia("(max-width: 1400px)").matches) {
                 // console.log('carousel created');
@@ -27,9 +26,7 @@ export default function Project1() {
         window.addEventListener('load', handleLoad);
         return () => {
             window.removeEventListener('load', handleLoad);
-            if (window.matchMedia("(max-width: 1400px)").matches) {
-                createFullscreenView();
-            }
+            createFullscreenView();
         };
     }, []);
 
