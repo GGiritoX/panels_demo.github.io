@@ -43,7 +43,7 @@ export function createFullscreenView() {
     }
 
     //SCROLL ============================================
-
+    /*
     function createFullscreenScroll() {
         const carouselInner = fullscreenOverlay;
         const images = previewImgs;
@@ -126,4 +126,5 @@ export function createFullscreenView() {
         carouselInner.addEventListener("touchmove", handleTouchMove);
         carouselInner.addEventListener("touchend", handleTouchEnd);
     }
+    */
 }
