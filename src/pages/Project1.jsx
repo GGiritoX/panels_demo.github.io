@@ -17,6 +17,7 @@ export default function Project1() {
         const handleLoad = () => {
             console.log('create carousel');
             createCarousel();
+            createFullscreenView();
             let indicators = document.querySelector('.my-carousel-indicator-container');
             if (!window.matchMedia("(max-width: 1400px)").matches) {
                 // console.log('carousel created');
@@ -30,7 +31,7 @@ export default function Project1() {
         return () => {
             window.removeEventListener('load', handleLoad);
             console.log('create fullscreen');
-            createFullscreenView();
+            
         };
     }, []);
 
