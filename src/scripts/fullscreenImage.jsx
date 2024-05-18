@@ -3,17 +3,16 @@ export function createFullscreenView() {
     let fullscreenOverlay = null;
     previewImgs.forEach(function (previewImg) {
         if (previewImg.classList !== "preview") {
-            previewImg.classList.add("preview")
-            console.log(`add event click on image`);
+            previewImg.classList.add("preview");
             previewImg.addEventListener('click', function () {
                 if (window.matchMedia("(max-width: 1400px)").matches) {
                     const imgSrc = this.getAttribute('src');
-                    console.log(`click on ${imgSrc}`);
                     showFullscreenPreview(imgSrc);
                 }
             });
         }
     });
+
 
 
     function showFullscreenPreview(imgSrc) {
@@ -29,7 +28,6 @@ export function createFullscreenView() {
 
             fullscreenOverlay.appendChild(fullscreenImg);
 
-            console.log(`fullscreen created`)
             document.body.appendChild(fullscreenOverlay);
 
             document.body.style.overflow = 'hidden'; // Disable scrolling
@@ -41,7 +39,6 @@ export function createFullscreenView() {
             fullscreenOverlay.remove();
             fullscreenOverlay = null;
             document.body.style.overflow = 'auto'; // Enable scrolling
-            console.log('fullscreen deleted');
         }
     }
 

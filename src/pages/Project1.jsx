@@ -12,42 +12,35 @@ import '../css/project-page/styles.css'
 import '../css/project-page/fullscreen.css'
 
 export default function Project1() {
-
+    
     useEffect(() => {
         const handleLoad = () => {
-            console.log('create carousel');
             createCarousel();
             createFullscreenView();
             let indicators = document.querySelector('.my-carousel-indicator-container');
             if (!window.matchMedia("(max-width: 1400px)").matches) {
                 // console.log('carousel created');
-                console.log('test1');
             } else {
                 indicators.hidden = true;
-                console.log('test2');
             }
         };
         window.addEventListener('load', handleLoad);
         return () => {
             window.removeEventListener('load', handleLoad);
-            console.log('create fullscreen');
-            
+            createFullscreenView(); //bug
         };
     }, []);
 
     useEffect(() => {
         const handleResize = () => {
             let indicators = document.querySelector('.my-carousel-indicator-container');
-            console.log('test3');
             if (!window.matchMedia("(max-width: 1400px)").matches) {
-                console.log('test4');
                 if (indicators.hidden) {
                     indicators.hidden = false; // normal view
                     // console.log('carousel show');
                 }
             } else {
                 // small size
-                console.log('test5');
                 if (!indicators.hidden) {
                     indicators.hidden = true;
                     // console.log('carousel hide');
@@ -59,6 +52,8 @@ export default function Project1() {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
+
+    
 
     function changeText() {
         const myTitle = document.querySelector('#title');
