@@ -4,9 +4,11 @@ export function createFullscreenView() {
     previewImgs.forEach(function (previewImg) {
         if (previewImg.classList !== "preview") {
             previewImg.classList.add("preview")
+            console.log(`add event click on image`);
             previewImg.addEventListener('click', function () {
                 if (window.matchMedia("(max-width: 1400px)").matches) {
                     const imgSrc = this.getAttribute('src');
+                    console.log(`click on ${imgSrc}`);
                     showFullscreenPreview(imgSrc);
                 }
             });
@@ -21,13 +23,13 @@ export function createFullscreenView() {
             fullscreenOverlay.classList.add('fullscreen-overlay');
             fullscreenOverlay.addEventListener('click', hideFullscreenPreview);
 
-            // for (let i = 0; i < 3; i++) {
             const fullscreenImg = document.createElement('img');
             fullscreenImg.classList.add('fullscreen-img');
             fullscreenImg.setAttribute('src', imgSrc);
 
             fullscreenOverlay.appendChild(fullscreenImg);
-            // }
+
+            console.log(`fullscreen created`)
             document.body.appendChild(fullscreenOverlay);
 
             document.body.style.overflow = 'hidden'; // Disable scrolling
@@ -39,6 +41,7 @@ export function createFullscreenView() {
             fullscreenOverlay.remove();
             fullscreenOverlay = null;
             document.body.style.overflow = 'auto'; // Enable scrolling
+            console.log('fullscreen deleted');
         }
     }
 
