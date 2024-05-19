@@ -1,22 +1,24 @@
 import React, { useEffect } from 'react';
+import { useRef } from 'react';
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
 
 import Header from "../components/header-project"
 import Footer from "../components/footer"
 import PNG_IMAGES from '../img/Project1/PNG/index'
 
 import { createCarousel } from '../scripts/newCarousel'
-import { createFullscreenView } from '../scripts/fullscreenImage'
 
 import '../css/project-page/carousel.css'
 import '../css/project-page/styles.css'
 import '../css/project-page/fullscreen.css'
 
 export default function Project1() {
-    
+
+    //LOAD event
     useEffect(() => {
         const handleLoad = () => {
             createCarousel();
-            createFullscreenView();
             let indicators = document.querySelector('.my-carousel-indicator-container');
             if (!window.matchMedia("(max-width: 1400px)").matches) {
                 // console.log('carousel created');
@@ -27,10 +29,12 @@ export default function Project1() {
         window.addEventListener('load', handleLoad);
         return () => {
             window.removeEventListener('load', handleLoad);
-            createFullscreenView(); //bug
+            createFullscreenView(); //bug phone
         };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
+    //RESIZE event
     useEffect(() => {
         const handleResize = () => {
             let indicators = document.querySelector('.my-carousel-indicator-container');
@@ -52,14 +56,66 @@ export default function Project1() {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
-
-    
-
+    //========================================================
     function changeText() {
         const myTitle = document.querySelector('#title');
         const myText = document.querySelector('#text');
         myTitle.classList.toggle('hide');
         myText.classList.toggle('hide');
+    }
+    //========================================================
+    const images = [
+        {
+            original: PNG_IMAGES.img1
+        },
+        {
+            original: PNG_IMAGES.img2
+        },
+        {
+            original: PNG_IMAGES.img3
+        },
+        {
+            original: PNG_IMAGES.img4
+        },
+        {
+            original: PNG_IMAGES.img5
+        },
+        {
+            original: PNG_IMAGES.img6
+        },
+        {
+            original: PNG_IMAGES.img7
+        },
+        {
+            original: PNG_IMAGES.img8
+        }
+    ];
+
+    const slidesref = useRef();
+
+    function ShowFullscreen(index) {
+        slidesref.current.slideToIndex(index);
+        slidesref.current.toggleFullScreen();
+    }
+    function toggleScroll(isFullscreen) {
+        if (isFullscreen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+    }
+    function createFullscreenView() {
+        const previewImgs = document.querySelectorAll('.project-carousel img');
+        previewImgs.forEach(function (previewImg, index) {
+            if (previewImg.classList !== "preview") {
+                previewImg.classList.add("preview");
+                previewImg.addEventListener('click', function () {
+                    if (window.matchMedia("(max-width: 1400px)").matches) {
+                        ShowFullscreen(index);
+                    }
+                });
+            }
+        });
     }
     //========================================================
 
@@ -121,6 +177,17 @@ export default function Project1() {
                 </div>
             </main>
             <Footer />
+            <ImageGallery
+                ref={slidesref}
+                items={images}
+                showThumbnails={false}
+                showNav={false}
+                showPlayButton={false}
+                useBrowserFullscreen={false}
+                disableThumbnailScroll={true}
+                onScreenChange={toggleScroll}
+                slideDuration={0}
+            />
         </>
     )
 }
