@@ -187,6 +187,7 @@ export default function Project1() {
                         OLN
                     </div>
                 </div>
+                {createFullscreenView()}
             </main>
             <Footer />
             <ImageGallery
