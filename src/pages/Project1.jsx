@@ -16,10 +16,11 @@ import '../css/project-page/fullscreen.css'
 export default function Project1() {
 
     //LOAD event
+    alert(1);
     useEffect(() => {
         const handleLoad = () => {
+            alert(2);
             createCarousel();
-            createFullscreenView(); //bug phone
             let indicators = document.querySelector('.my-carousel-indicator-container');
             if (!window.matchMedia("(max-width: 1400px)").matches) {
                 // console.log('carousel created');
@@ -31,6 +32,7 @@ export default function Project1() {
         return () => {
             window.removeEventListener('load', handleLoad);
             createFullscreenView(); //bug phone
+            alert(3);
         };
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
@@ -95,6 +97,7 @@ export default function Project1() {
     const slidesref = useRef();
 
     function ShowFullscreen(index) {
+        alert('open fullscreen');
         slidesref.current.slideToIndex(index);
         slidesref.current.toggleFullScreen();
     }
@@ -106,6 +109,7 @@ export default function Project1() {
         }
     }
     function createFullscreenView() {
+        alert(4);
         const previewImgs = document.querySelectorAll('.project-carousel img');
         previewImgs.forEach(function (previewImg, index) {
             if (previewImg.classList !== "preview") {
