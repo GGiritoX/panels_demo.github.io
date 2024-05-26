@@ -21,6 +21,7 @@ export default function Project1() {
         const handleLoad = () => {
             alert(2);
             createCarousel();
+            createFullscreenView();
             let indicators = document.querySelector('.my-carousel-indicator-container');
             if (!window.matchMedia("(max-width: 1400px)").matches) {
                 // console.log('carousel created');
@@ -31,8 +32,8 @@ export default function Project1() {
         window.addEventListener('load', handleLoad);
         return () => {
             window.removeEventListener('load', handleLoad);
-            createFullscreenView(); //bug phone
             alert(3);
+            createFullscreenView(); //bug phone
         };
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
