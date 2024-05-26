@@ -17,6 +17,7 @@ export default function Project1() {
 
     //LOAD event
     alert(1);
+    createFullscreenView();
     useEffect(() => {
         const handleLoad = () => {
             alert(2);
