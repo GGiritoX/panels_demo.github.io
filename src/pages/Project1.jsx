@@ -17,7 +17,6 @@ export default function Project1() {
 
     //LOAD event
     alert(1);
-    createFullscreenView();
     useEffect(() => {
         const handleLoad = () => {
             alert(2);
@@ -112,6 +111,7 @@ export default function Project1() {
     function createFullscreenView() {
         alert(4);
         const previewImgs = document.querySelectorAll('.project-carousel img');
+        console.log(previewImgs);
         previewImgs.forEach(function (previewImg, index) {
             if (previewImg.classList !== "preview") {
                 previewImg.classList.add("preview");
@@ -123,6 +123,8 @@ export default function Project1() {
             }
         });
     }
+    
+    createFullscreenView();// netlify test
     //========================================================
 
     return (
