@@ -125,6 +125,9 @@ export default function Project1() {
         });
     }
     
+    useEffect(() => {
+        alert('test effect')
+      }, []);
     createFullscreenView();// netlify test
     //========================================================
 
