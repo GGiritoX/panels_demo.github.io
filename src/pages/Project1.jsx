@@ -16,10 +16,10 @@ import '../css/project-page/fullscreen.css'
 export default function Project1() {
 
     //LOAD event
-    alert(1);
+    alert('first line');
     useEffect(() => {
         const handleLoad = () => {
-            alert(2);
+            alert('handleLoad');
             createCarousel();
             createFullscreenView();
             let indicators = document.querySelector('.my-carousel-indicator-container');
@@ -32,7 +32,6 @@ export default function Project1() {
         window.addEventListener('load', handleLoad);
         return () => {
             window.removeEventListener('load', handleLoad);
-            alert(3);
             createFullscreenView(); //bug phone
         };
         // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -41,6 +40,7 @@ export default function Project1() {
     //RESIZE event
     useEffect(() => {
         const handleResize = () => {
+            console.log('window resize');
             let indicators = document.querySelector('.my-carousel-indicator-container');
             if (!window.matchMedia("(max-width: 1400px)").matches) {
                 if (indicators.hidden) {
@@ -110,16 +110,16 @@ export default function Project1() {
         }
     }
     function createFullscreenView() {
-        alert(4);
         const previewImgs = document.querySelectorAll('.project-carousel img');
+        alert(`createfullscreen ${previewImgs.length}`);
         console.log(previewImgs);
         previewImgs.forEach(function (previewImg, index) {
             if (previewImg.classList !== "preview") {
                 previewImg.classList.add("preview");
                 previewImg.addEventListener('click', function () {
-                    if (window.matchMedia("(max-width: 1400px)").matches) {
+                    //if (window.matchMedia("(max-width: 1400px)").matches) {
                         ShowFullscreen(index);
-                    }
+                    // }
                 });
             }
         });
