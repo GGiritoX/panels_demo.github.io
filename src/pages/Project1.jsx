@@ -222,7 +222,24 @@ export default function Project1() {
                         OLN
                     </div>
                 </div>
-                {createFullscreenView()}
+                <button
+                    id="tmp-btn" name="tmp-btn"
+                    onClick={createFullscreenView}
+                    style={{
+                        position: 'fixed',
+                        left: '0',
+                        top: '50%',
+                        transform: 'translateY(-50%)',
+                        zIndex: '9999',
+                        padding: '10px 20px',
+                        backgroundColor: '#007bff',
+                        color: 'white',
+                        border: 'none',
+                        borderRadius: '5px',
+                        cursor: 'pointer',
+                        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+                    }}
+                >CreateFullScreen</button>
             </main>
             <Footer />
             <ImageGallery
