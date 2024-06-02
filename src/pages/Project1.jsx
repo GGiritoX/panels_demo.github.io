@@ -19,7 +19,7 @@ export default function Project1() {
     alert('first line');
     useEffect(() => {
         const handleLoad = () => {
-            alert('handleLoad');
+            // alert('handleLoad');
             createCarousel();
             createFullscreenView();
             let indicators = document.querySelector('.my-carousel-indicator-container');
@@ -118,17 +118,52 @@ export default function Project1() {
                 previewImg.classList.add("preview");
                 previewImg.addEventListener('click', function () {
                     //if (window.matchMedia("(max-width: 1400px)").matches) {
-                        ShowFullscreen(index);
+                    ShowFullscreen(index);
                     // }
                 });
             }
         });
     }
-    
+
     useEffect(() => {
         alert('test effect')
-      }, []);
+    }, []);
     createFullscreenView();// netlify test
+
+    //TESTS useEffect
+    useEffect(() => {
+        const handleLoading = () => alert('useEffect - loading');
+        const handleInteractive = () => alert('useEffect - interactive');
+        const handleComplete = () => alert('useEffect - complete');
+        const handleDOMContentLoaded = () => alert('useEffect - DOMContentLoaded');
+        const handleLoad = () => alert('useEffect - load');
+        const handleBeforeUnload = (event) => alert('useEffect - beforeunload');
+        const handleUnload = () => alert('useEffect - unload');
+
+        document.addEventListener('readystatechange', () => {
+            if (document.readyState === 'loading') handleLoading();
+            else if (document.readyState === 'interactive') handleInteractive();
+            else if (document.readyState === 'complete') handleComplete();
+        });
+
+        document.addEventListener('DOMContentLoaded', handleDOMContentLoaded);
+        window.addEventListener('load', handleLoad);
+        window.addEventListener('beforeunload', handleBeforeUnload);
+        window.addEventListener('unload', handleUnload);
+
+        return () => {
+            document.removeEventListener('readystatechange', () => {
+                if (document.readyState === 'loading') handleLoading();
+                else if (document.readyState === 'interactive') handleInteractive();
+                else if (document.readyState === 'complete') handleComplete();
+            });
+            document.removeEventListener('DOMContentLoaded', handleDOMContentLoaded);
+            window.removeEventListener('load', handleLoad);
+            window.removeEventListener('beforeunload', handleBeforeUnload);
+            window.removeEventListener('unload', handleUnload);
+        };
+    }, []);
+
     //========================================================
 
     return (
